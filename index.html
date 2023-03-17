@@ -1,42 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar 1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link href="E:\Programs\Html\Travell\Style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <button class="button">Home</button>
-      <div class="dropdowns">
-        <div class="dropdown">
-          <button class="button">
-            Services
-          </button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travell Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="text/javascript" href="script.js">
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Travelling</a>
+            </div>
         </div>
-        <div class="dropdown">
-          <button class="button">
-            Products
-          </button>
-        </div>
-        <div class="dropdown">
-          <button class="button">
-            Support
-          </button>
-        </div>
-      </div>
     </nav>
-  </body>
+    <div class="btn">
+        <ul>
+            <a href="E:\Programs\Html\Travell\New folder\Hostels.html"><button type="submit">Hotels</button></a>
+            <a href="#"><button type="submit">Holiday Homes</button></a>
+            <a href="E:\Programs\Html\Travell\New folder\Booking\booking.html"><button type="submit">Booking</button></a>
+            <a href="#"><button type="submit">Restaurants</button></a>
+            <a href="E:\Programs\Html\Travell\New folder\Booking\about.html"><button type="submit">About Us</button></a>
+            <a href="#"><button type="submit">More</button></a>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;
+                Welcome to Travelling</h1>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                Find and book amazing travel experiences around the world.</p>
+            <form action="#" class="form">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                <input class="input" type="text" placeholder="Search for hotels, flights, restaurants, and more">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title login">Login Form</div>
+                <div class="title signup">Signup Form</div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <pre>
+                  </pre>
+                        <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">Create an account <a href="">Signup now</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="custom-select" style="width:200px;">
+                            <select>
+                                <option value="0">Select Role</option>
+                                <option value="1">User</option>
+                                <option value="2">Guide</option>
+                                <option value="3">Admin</option>
+                            </select>
+                        </div>
+
+                        <script>
+                            var x, i, j, l, ll, selElmnt, a, b, c;
+                            /*look for any elements with the class "custom-select":*/
+                            x = document.getElementsByClassName("custom-select");
+                            l = x.length;
+                            for (i = 0; i < l; i++) {
+                              selElmnt = x[i].getElementsByTagName("select")[0];
+                              ll = selElmnt.length;
+                              /*for each element, create a new DIV that will act as the selected item:*/
+                              a = document.createElement("DIV");
+                              a.setAttribute("class", "select-selected");
+                              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                              x[i].appendChild(a);
+                              /*for each element, create a new DIV that will contain the option list:*/
+                              b = document.createElement("DIV");
+                              b.setAttribute("class", "select-items select-hide");
+                              for (j = 1; j < ll; j++) {
+                                /*for each option in the original select element,
+                                create a new DIV that will act as an option item:*/
+                                c = document.createElement("DIV");
+                                c.innerHTML = selElmnt.options[j].innerHTML;
+                                c.addEventListener("click", function(e) {
+                                    /*when an item is clicked, update the original select box,
+                                    and the selected item:*/
+                                    var y, i, k, s, h, sl, yl;
+                                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                    sl = s.length;
+                                    h = this.parentNode.previousSibling;
+                                    for (i = 0; i < sl; i++) {
+                                      if (s.options[i].innerHTML == this.innerHTML) {
+                                        s.selectedIndex = i;
+                                        h.innerHTML = this.innerHTML;
+                                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                                        yl = y.length;
+                                        for (k = 0; k < yl; k++) {
+                                          y[k].removeAttribute("class");
+                                        }
+                                        this.setAttribute("class", "same-as-selected");
+                                        break;
+                                      }
+                                    }
+                                    h.click();
+                                });
+                                b.appendChild(c);
+                              }
+                              x[i].appendChild(b);
+                              a.addEventListener("click", function(e) {
+                                  /*when the select box is clicked, close any other select boxes,
+                                  and open/close the current select box:*/
+                                  e.stopPropagation();
+                                  closeAllSelect(this);
+                                  this.nextSibling.classList.toggle("select-hide");
+                                  this.classList.toggle("select-arrow-active");
+                                });
+                            }
+                            function closeAllSelect(elmnt) {
+                              /*a function that will close all select boxes in the document,
+                              except the current select box:*/
+                              var x, y, i, xl, yl, arrNo = [];
+                              x = document.getElementsByClassName("select-items");
+                              y = document.getElementsByClassName("select-selected");
+                              xl = x.length;
+                              yl = y.length;
+                              for (i = 0; i < yl; i++) {
+                                if (elmnt == y[i]) {
+                                  arrNo.push(i)
+                                } else {
+                                  y[i].classList.remove("select-arrow-active");
+                                }
+                              }
+                              for (i = 0; i < xl; i++) {
+                                if (arrNo.indexOf(i)) {
+                                  x[i].classList.add("select-hide");
+                                }
+                              }
+                            }
+                            /*if the user clicks anywhere outside the select box,
+                            then close all select boxes:*/
+                            document.addEventListener("click", closeAllSelect);
+                            </script>
+
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                        <div class="signup-link">Already have an account? <a href="">Login</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section id="featured-destinations">
+        <h2>International Tours</h2>
+        <div class="container">
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="ny.jpg" alt="Destination 1">
+                    <h3>New York City, USA</h3>
+                    <p>Explore the city that never sleeps.</p>
+                    <p>from 52000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="tk.jpg" alt="Destination 2">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Discover the unique blend of ancient and modern culture.</p>
+                    <p>from 45000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="pr.jpg" alt="Destination 3">
+                    <h3>Paris, France</h3>
+                    <p>Experience the city of love and romance.</p>
+                    <p>from 40000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+        </div>
+        <h2>National Tours</h2>
+        <div class="container">
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="ah.jpg" alt="Destination 1">
+                    <h3>Ahmedabad, Gujarat</h3>
+                    <p>Explore the city that never sleeps.</p>
+                    <p>from 7000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="m.jpg" alt="Destination 2">
+                    <h3>Mumbai, Maharastra</h3>
+                    <p>Discover the unique blend of ancient and modern culture.</p>
+                    <p>from 10000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="E:\Programs\Html\Travell\New folder\Hotel\places.html">
+                    <img src="jk.jpg" alt="Destination 3">
+                    <h3>Kashmir, J&K</h3>
+                    <p>Experience the city of love and romance.</p>
+                    <p>from 25000@<i class="fas fa-rupee-sign"></i> per adult</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p> &nbsp; &nbsp; &copy;2023 Traveling All rights reserved.</p>
+    </footer>
+
+</body>
+
 </html>

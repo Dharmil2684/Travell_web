@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #bdbdbd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg {
+    height: 200px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+/* Navigation Styles */
+nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background: rgb(255,255,255);
+    padding: 20px 0;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 50px;
+}
+
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*Buttons Styles*/
+
+.btn ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 125px;
+}   
+
+.btn button {
+    margin-top: 120px;  
+    margin-left: 20px;
+    margin-bottom: -35px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 45px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba( 0, .44, 0, 0.44);
+    backdrop-filter: blur(6px);
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: #333;
+  }
+  
+  .btn button:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgb(103, 103, 103);
+    color: #fff;
+  }
+  
+  .btn button:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+    text-decoration: none;
+  }
+
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+
+
+
+/* Hero Section Styles */
+
+#hero {
+    margin-left: -350px;
+    height: 80vh;
+    background-image: url('bg.jpg');
+    background-size: auto 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    left: 100px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#hero .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+#hero button[type="submit"] {
+    padding: 10px 30px;
+    background-color: #f15a29;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Featured Destinations Styles */
+#featured-destinations {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+#featured-destinations h2 {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #333333;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    background-color: rgba(0,0,0,.5);
+}
+
+#featured-destinations .container{
+    display: flex;
+}
+
+#featured-destinations .container a{
+    color: black;
+}
+
+.destination {
+    width: 33.33%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.destination:hover {
+    background: rgb(206, 206, 206);
+}
+
+.destination img {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.destination h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.destination p {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+}
+
+
+/* Images */
+.nys {
+    margin-left: 100px;
+    margin-top: -100px;    
+}
+
+.nys img {
+    height: 230px;
+    width: 400px;
+    padding-left: 15px;
+    padding-top: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(47, 47, 47));
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.text {
+    margin-left: -60px;
+    max-width: 650px;
+}
